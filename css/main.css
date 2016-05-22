@@ -1,0 +1,282 @@
+body{
+	min-width: 320px;
+}
+@font-face {
+    font-family: 'corbertitalic';
+    src: url('../fonts/myfonts/Corbert-Regular-webfont.eot');
+    src: url('../fonts/myfonts/Corbert-Regular-webfont.eot?#iefix')format('embedded-opentype'),
+         url('../fonts/myfonts/Corbert-Regular-webfont.woff') format('woff'),
+         url('../fonts/myfonts/Corbert-Regular-webfont.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+/* 导航栏  */
+.header-main {
+	padding: 10px 0;
+}
+
+/* 导航栏的navbar-brand */
+.navbar-brand {
+	padding-top: 8px;
+}
+
+/* 导航栏的li  */
+.navbar-nav li {
+	font-weight: bold;
+}
+
+/* 导航栏当前页 */
+.navbar-nav .current-page {
+	background: #ff7878;
+}
+
+/* 导航栏当前页的a */
+.navbar-nav li.current-page a {
+	color: #fff;
+}
+
+/* 导航栏li鼠标滑过  */
+.navbar-collapse li:hover {
+	color: #fff;
+}
+
+header .header-img {
+	padding-top: 50px;
+}
+
+header .image-text {
+	color: #fff;
+	cursor: pointer;
+	position: absolute;
+	z-index: 100;
+}
+header .image-text h2{
+	font-family: 'corbertitalic';
+}
+
+/* 主区域的标题 */
+main h4 {
+	cursor: pointer;
+}
+
+/* 主区域的idea */
+.idea {
+	padding: 70px 0;
+	background: #f2f2f2;
+}
+
+.idea .col-lg-4 {
+	cursor: pointer;
+}
+
+.idea span {
+	font-size: 32px;
+	color: #ff7878;
+}
+
+.idea p {
+	font-size: 15px;
+	text-indent: 8px;
+	line-height: 32px;
+	color: #9f9f9f;
+}
+
+/* 主区域的latest-works */
+.latest-works {
+	padding: 50px 0;
+	background: #e0e0e0;
+}
+
+.latest-works h4 {
+	padding-bottom: 20px;
+}
+
+.latest-works img {
+	cursor: pointer;
+	transform: rotate(0);
+	/*ie*/
+	-ms-transform: rotate(0);
+	/*opera*/
+	-o-transform: rotate(0);
+	/*firefox*/
+	-moz-transform: rotate(0);
+	/*safari chrome*/
+	-webkit-transform: rotate(0);
+	transition-duration: 1s;
+	/*ie*/
+	-ms-transition-duration: 1s;
+	/*Opera*/
+	-o-transition-duration: 1s;
+	/* Firefox 4 */
+	-webkit-transition-duration: 1s;
+	/* Safari 和 Chrome */
+	-o-transition-duration: 1s;
+}
+
+.latest-works img:hover {
+	transform: rotate(-15deg);
+	/*ie*/
+	-ms-transform: rotate(-15deg);
+	/*opera*/
+	-o-transform: rotate(-15deg);
+	/*firefox*/
+	-moz-transform: rotate(-15deg);
+	/*safari chrome*/
+	-webkit-transform: rotate(-15deg);
+	transition-duration: 1s;
+	/*ie*/
+	-ms-transition-duration: 1s;
+	/*Opera*/
+	-o-transition-duration: 1s;
+	/* Firefox 4 */
+	-webkit-transition-duration: 1s;
+	/* Safari 和 Chrome */
+	-o-transition-duration: 1s;
+}
+
+/* 主区域的latest-works 模态框 */
+.modal-body p {
+	width: 90%;
+	margin: 0 auto;
+	color: #9f9f9f;
+	cursor: default;
+}
+
+.modal-title{
+	font-weight: normal;
+}
+
+/* 主区域的munter */
+.munter {
+	padding-top: 50px;
+	background: #f2f2f2;
+}
+
+.munter p {
+	padding-bottom: 50px;
+	font-size: 15px;
+	text-indent: 8px;
+	line-height: 32px;
+	color: #9f9f9f;
+}
+
+/* 主区域的clients */
+.clients {
+	padding: 50px 0;
+	background: #ebebeb;
+}
+
+/* 主区域的our-belief */
+.our-belief {
+	padding: 30px 0;
+	background: #ff7878;
+}
+
+
+.our-belief h4 {
+	font-size: 18px;
+	color: #fff;
+}
+
+.our-belief p {
+	color: #ffb9b9;
+	font-size: 15px;
+	line-height: 26px;
+}
+
+/* 尾部  */
+footer {
+	padding: 20px;
+	background: #2d2d2d;
+}
+
+footer li a {
+	margin: 0 5px;
+	font-size: 24px;
+	color: #bdbdbd;
+	cursor: pointer;
+}
+
+footer li a:hover {
+	color: #ff7878;
+	text-decoration: none;
+}
+
+/* 当屏幕宽度  大于1200的  头部图片上的文字样式 */
+@media only screen and (min-width: 1200px) {
+	header .image-text {
+		top: 35%;
+	}
+	header .image-text h2 {
+		font-size: 78px;
+	}
+	header .image-text div {
+		font-size: 48px;
+	}
+}
+
+/* 当屏幕宽度  大于992小于1200的  头部图片上的文字样式 */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	header .image-text {
+		top: 35%;
+	}
+	header .image-text h2 {
+		font-size: 64px;
+	}
+	header .image-text div {
+		font-size: 36px;
+	}
+}
+
+/* 当屏幕宽度  小于615并且大于992的   头部图片上的文字样式 */
+@media only screen and (min-width: 615px) and (max-width: 992px) {
+	header .image-text {
+		top: 20%;
+	}
+	header .image-text h2 { // 图片上面的文字
+		font-size: 58px;
+		text-align: center;
+	}
+	header .image-text div {
+		font-size: 36px;
+	}
+	.clients li{ 
+		width: 100%;
+	}
+}
+
+/* 当屏幕宽度  小于462并且大于615的   头部图片上的文字样式 */
+@media only screen and (min-width: 462px) and (max-width: 615px) {
+	header .image-text {
+		top: 15%;
+	}
+	header .image-text h2 { // 图片上面的文字
+		font-size: 42px;
+	}
+	header .image-text div {
+		font-size: 22px;
+	}
+	.clients li{
+		width: 100%;
+	}
+}
+
+/* 当屏幕宽度  小于462的   头部图片上的文字样式 */
+@media only screen and (max-width: 462px) {
+	#logo{  
+		width: 150px;
+	}
+	
+	header .image-text { 
+		top: 10%;
+	}
+	header .image-text h2 { // 图片上面的文字
+		font-size: 28px;
+	}
+	header .image-text div {
+		font-size: 18px;
+	}
+	.clients li{
+		width: 100%;
+	}
+}

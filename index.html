@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<!-- 让IE8采用其最标准的兼容模式显示页面 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- 媒体 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<!-- 引入 bootstrap.min.css 文件  -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!-- 引入 font-awesome.min.css 文件  -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<!-- 自定义CSS -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询 -->
+		<!--[if lte IE 9]>
+			<script type="text/javascript" src="js/html5shiv.min.js" ></script>
+			// IE 8支持媒体查询
+			<script type="text/javascript" src="js/respond.min.js" ></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<!-- 头部 -->
+		<header  role="banner">
+			<!-- 导航栏 -->
+			<nav class="navbar navbar-inverse navbar-fixed-top header-main" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<!-- 保证在窄屏时要显示的图标样式 -->
+						<button type="button" class="navbar-toggle" 
+							data-toggle="collapse" data-target="#spotHeader">
+						<span class="sr-only">SPOTWP-navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						<!-- 确保无论是宽屏还是窄屏，navbar-brand都显示  -->
+						<a class="navbar-brand" href="##">
+							<img src="img/spotlogo1.png" alt="spot" id="logo" />
+						</a>
+					</div>
+					 <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，
+					 显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+					<div class="collapse navbar-collapse navbar-right" id="spotHeader">
+						<ul class="nav navbar-nav">
+							<li class="current-page"><a href="##">HOME</a></li>
+							<li><a href="##">WORKS</a></li>
+							<li><a href="##">SERVICES</a></li>
+							<li><a href="##">TEAM</a></li>
+							<li><a href="##">BLOG</a></li>
+							<li>
+								<a href="##">
+									<span class="icon-envelope-alt"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		
+			<!-- 头部图片 -->
+			<div>
+				<img src="img/header-bg.jpg" class="img-responsive header-img" />
+				<div class="image-text text-center col-lg-6 col-lg-push-3">
+					<h2>It Doesn't Take a Rocket 
+					<strong>Scientist</strong>
+					</h2>
+					<div>IT TAKES A DESIGNER</div>
+				</div>
+			</div>
+		</header>
+		
+		
+		<!-- 主要内容 -->
+		<main role="main">
+			
+			<!-- idea -->
+			<div class="idea">
+				<div class="container">
+					<div class="row text-center">
+						<!-- Support -->
+						<div class="col-lg-4">
+							<span class="icon-trophy"></span>
+							<h3>Support</h3>
+							<p>
+								There are many variations of passages of Lorem lpsum available, 
+								but the majority have suffered alteration in some form,by injected 
+								humour,or randomiser words while don't look even believable.
+							</p>
+						</div>
+						
+						<!-- Bootstrap -->
+						<div class="col-lg-4">
+							<span class="icon-laptop" aria-hidden="true"></span>
+							<h3>Bootstrap</h3>
+							<p>
+								There are many variations of passages of Lorem lpsum available, 
+								but the majority have suffered alteration in some form,by injected 
+								humour,or randomiser words while don't look even believable.
+							</p>
+						</div>
+						
+						<!-- Design  -->
+						<div class="col-lg-4">
+							<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+							<h3>Design</h3>
+							<p>
+								There are many variations of passages of Lorem lpsum available, 
+								but the majority have suffered alteration in some form,by injected 
+								humour,or randomiser words while don't look even believable.
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- latest-works -->
+			<div class="latest-works">
+				<div class="container text-center">
+					<!-- latest-works 标题 -->
+					<h4>LATEST WORKS</h4>
+					<!-- latest-works 图片 -->
+					<div class="row">
+						<div class="col-lg-4 latest-modal-btn">
+							<img src="img/p03.png" alt="3" />
+						</div>
+						<div class="col-lg-4 latest-modal-btn">
+							<img src="img/p02.png" alt="2" />
+						</div>
+						<div class="col-lg-4 latest-modal-btn">
+							<img src="img/p01.png" alt="1" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- latest-works 模态框 -->
+			<div class="modal fade latest-modal">
+				<div class="modal-dialog">
+					<div class="modal-content text-center">
+						<!-- 模态框头部 -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+								<span class="sr-only">Close</span>
+							</button>
+							<h4 class="modal-title"></h4>
+						</div>
+						<!-- 模态框内容区 -->
+						<div class="modal-body">
+							<img alt="latest-modal-img" class="img-responsive center-block"/>
+							<p>
+								More about project.Lorem Ipsum is simply dummy text of
+								the printing and typesetting industry.Lorem Ipsum has been 
+								the industry's standard dummy text ever since the 1500s,when 
+								an unknown printer took a galley of type and scrambled.
+							</p>
+						</div>
+						<!-- 模态框尾部 -->
+						<div class="modal-footer">
+							<!-- 模态框尾部的关闭按钮 -->
+							<button type="button" class="btn btn-default"  data-dismiss="modal">
+								Close
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- munter -->
+			<div class="munter">
+				<div class="container text-center">
+					<!-- munter 标题 -->
+					<h4>WE CREATE FIRST CLASS DESIGN</h4>
+					<!-- munter 内容 -->
+					<p class="col-lg-8 col-lg-push-2">By being true to the brand we represent,
+						we elevate the audiences' 
+						relationship to it.Like becomes love becomes a passion.Passion becomes 
+						advocacy.And we see the brand blossom from within,creating a whole story 
+						the audience embraces.That's when the brand can truly flex itsmuscles.
+					</p>
+					<!-- munter 图片 -->
+					<img src="img/munter.png" class="img-responsive col-lg-10 col-lg-push-1"/>
+				</div>
+			</div>
+			
+			<!-- clients -->
+			<div class="clients">
+				<div class="container text-center">
+					<!-- clients 标题 -->
+					<h4>OUR AWESOME CLIENTS</h4>
+					<!-- clients 图片 -->
+					<ul class="list-inline list-unstyled">
+						<li><a href="##"><img src="img/c05.gif" /></a></li>
+						<li><a href="##"><img src="img/c04.gif" /></a></li>
+						<li><a href="##"><img src="img/c03.gif" /></a></li>
+						<li><a href="##"><img src="img/c02.gif" /></a></li>
+						<li><a href="##"><img src="img/c01.gif" /></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- our-belief -->
+			<div class="our-belief">
+				<div class="container text-center">
+					<!-- our-belief 标题 -->
+					<h4>WE ARE STORYTELLERS.BRANDS ARE OUR SUBJECTS.DESIGN IS OUR VOICE</h4>
+					<!-- our-belief 内容 -->
+					<p class="col-lg-8 col-lg-push-2">
+						We believe ideas come from everyone.Everyone within our agency walls 
+						is a designer in their own right.And there are a few principles we believe-and
+						 we believe everyone should believe-about our design craft.These truths drive us,
+						 motivate us,and ultimately help us redefine the power of design.
+					</p>
+				</div>
+			</div>
+			
+		</main>
+		
+		<!-- footer -->
+		<footer  role="contentinfo">
+			<ul class="container list-inline text-center">
+				<li><a href="##"><span class="icon-twitter"></span></a></li>
+				<li><a href="##"><span class="icon-dribbble"></span></a></li>
+				<li><a href="##"><span class="icon-facebook"></span></a></li>
+			</ul>
+		</footer>
+
+		<!-- 导入jquery.min.js  -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!-- 导入bootstrap.min.js  -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- 自定义js -->
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>
